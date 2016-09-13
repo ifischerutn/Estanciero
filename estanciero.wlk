@@ -40,3 +40,11 @@ class Juego {
         // TODO: HACERLO
     }
 }
+
+class jugador{}
+
+class provincia{}
+
+class campos inherits provincia{}
+
+class empresas{}
