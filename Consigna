@@ -6,6 +6,7 @@ De cada jugador nos va a interesar el dinero que posee (por el hecho de cobrar y
 
 
 Se dispone de un tablero con casilleros. En su mayoría los casilleros son propiedades, donde de cada propiedad se conoce su precio de compra inicial y su dueño. Los otros casilleros son premios y el casillero de salida, explicados más adelante.
+
 Caída en una propiedad
 Cuando un jugador J cae en una propiedad puede ocurrir alguna de estas tres cosas
 Que la propiedad no pertenezca a nadie (es decir, que el dueño sea el Banco): 
