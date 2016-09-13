@@ -43,8 +43,50 @@ class Juego {
 
 class jugador{}
 
-class provincia{}
+class provincia{
+	var campos = #{}
+	
+	method duenios(){
+		return campos.map({unCampo => unCampo.duenio()})
+	}
+	method esMonopolio(){
+		return ((self.duenios()).asSet()).size() == 1 //esta solucion es horrible, encontrar una mejor
+	}
+}
 
-class campos inherits provincia{}
+class campos{ //es inherit de provincia?
+	var precioCompra
+	var duenio
+	var rentaFija
+	var cantidadEstancias
+	const construccionEstancia
+	
+	method rentaFija(){
+		return rentaFija
+	}
+	method construirEstancia(){
+		
+		cantidadEstancias += 1 //sin terminar 
+	}
+	method valorRenta(){
+		if (cantidadEstancias = 0){
+			return rentaFija
+		}
+		else{
+			return rentaFija * (2**cantidadEstancias)
+		}
+	}
+	method duenio(){
+		return duenio
+	}
+}
 
-class empresas{}
+class empresas{
+	var precioCompra
+	var duenio
+	
+	method duenio(){
+		return duenio
+	}
+}
+
