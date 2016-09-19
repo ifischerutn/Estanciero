@@ -68,9 +68,9 @@ class Provincia{
 	}
 	
 	method construccionPareja(campoAConstruir) {
-		return campos.all({unCampo => self.esPareja(campoAConstruir, unCampo)})
+		return campos.all({unCampo => self.esParejo(campoAConstruir, unCampo)})
 	}
-	method esPareja(campoAConstruir, otroCampo) {
+	method esParejo(campoAConstruir, otroCampo) {
 		return campoAConstruir.cantidadEstancias() <= otroCampo.cantidadEstancias()
 	}
 }
@@ -80,7 +80,7 @@ class Campo{ //es inherit de provincia?
 	var duenio
 	var rentaFija
 	var cantidadEstancias
-	var costoEstancia
+	var costoEstancia 
 	
 	method rentaFija(){
 		return rentaFija
@@ -117,3 +117,18 @@ class Campo{ //es inherit de provincia?
 		return false
 	}
 }
+
+class Empresa{
+	var precioCompra
+	var duenio
+  	
+	method duenio(unDuenio) {
+		return duenio
+		duenio = unDuenio
+	}
+	
+	method sosEmpresa() {
+		return false
+  	}
+  	}
+  }
