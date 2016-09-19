@@ -127,7 +127,7 @@ class Empresa{
 	}
 	
 	method sosEmpresa() {
-		return false
+		return true
   	}
   	}
   }
