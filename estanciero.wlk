@@ -125,5 +125,4 @@ class Empresa{
 	method sosEmpresa() {
 		return true
   	}
-  	}
   }
