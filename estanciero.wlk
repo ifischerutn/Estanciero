@@ -64,7 +64,7 @@ class Provincia{
 		return campos.map({unCampo => unCampo.duenio()})
 	}
 	method esMonopolio(){
-		return self.duenios().size() == 1 
+		return self.duenios().size() == 1  //ver si hay alguno mejor
 	}
 	
 	method construccionPareja(campoAConstruir) {
@@ -102,15 +102,11 @@ class Campo{ //es inherit de provincia?
 			return rentaFija
 		}
 		else{
-			return rentaFija * (2**cantidadEstancias)
+			return rentaFija * (2**cantidadEstancias)  //sin el if no es lo mismo??
 		}
 	}
 	method duenio(){
 		return duenio
-	}
-	
-	method duenio(unDuenio) {
-		duenio = unDuenio
 	}
 	
 	method sosEmpresa() {
