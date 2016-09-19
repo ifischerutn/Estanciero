@@ -122,9 +122,8 @@ class Empresa{
 	var precioCompra
 	var duenio
   	
-	method duenio(unDuenio) {
+	method duenio() {
 		return duenio
-		duenio = unDuenio
 	}
 	
 	method sosEmpresa() {
